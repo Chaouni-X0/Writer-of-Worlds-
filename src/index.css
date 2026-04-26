@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", serif;
+  --font-tajawal: "Tajawal", sans-serif;
+  --font-cairo: "Cairo", sans-serif;
+  --font-readex: "Readex Pro", sans-serif;
+  --font-ibmplex: "IBM Plex Sans Arabic", sans-serif;
+  --font-changa: "Changa", sans-serif;
+  --font-mada: "Mada", sans-serif;
+  --font-arefruqaa: "Aref Ruqaa", serif;
+}
+
+body {
+  direction: rtl;
+  @apply bg-[#0a0c10] text-[#e0e0e0];
+}
+
+.markdown-body {
+  font-family: inherit;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+[contenteditable] img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1.5rem auto;
+  display: block;
+}
